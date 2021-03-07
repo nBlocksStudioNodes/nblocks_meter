@@ -1,16 +1,36 @@
 # [METER](https://github.com/nBlocksStudioNodes/nblocks_meter)
 
-Drives a moving-coil meter with PWM and if needed with a driving transistor.
+Drives a moving-coil meter with a PWM pin and optionally with a  transistor.
+
+----
+
+<p align="center">
+ <img
+src="img/01.PNG"
+width = 400
+/>
+</p>
+
+----
+
+<p align="center">
+ <img
+src="img/02.PNG"
+width = 300
+/>
+</p>
+
+----
 
   *  Category: Function
   *  HAL: mbed
   *  Tested: LPC1768
-  *  Author: Nikolaos Chalikias
+  *  Author: N. Chalikias
 
-## Inputs/Outputs
+## Inputs
  *  (Schematic pin1) value to be indicated, accepts 2 types:
-         *  uint16_t
-         *  float
+    *  uint16_t
+    *  float
 
 ## Parameters
  *  PinName: pinADC: ADC input pin
