@@ -1,27 +1,75 @@
-{
-	"category": "Output",
-	"inputs": 1, 
-	"name": "PWM", 
+{   "category": "Output",
+	"name": "Meter",
+	"inputs": 1,
+	"outputs": 0,
 	"parameters": [
 		{
-			"default": "LED3", 
-			"type": "raw", 
-			"name": "Pin", 
-			"value": "LED3", 
-			"options": []
+			"name": "pinPWM",
+			"type": "raw",
+			"default": "p22",
+			"options": [
+				""
+			],
+			"value": "p22"
+		},
+		{
+			"name": "Frequency",
+			"type": "int",
+			"default": 50,
+			"options": [
+				""
+			],
+			"value": 50
+		},
+		{
+			"name": "meterVcc",
+			"type": "raw",
+			"default": "3.3",
+			"options": [
+				""
+			],
+			"value": "3.3"
+		},
+		{
+			"name": "meterVmax",
+			"type": "raw",
+			"default": "1",
+			"options": [
+				""
+			],
+			"value": "1"
+		},
+		{
+			"name": "leftValue",
+			"type": "raw",
+			"default": "15",
+			"options": [
+				""
+			],
+			"value": "15"
+		},
+		{
+			"name": "rightValue",
+			"type": "raw",
+			"default": "30",
+			"options": [
+				""
+			],
+			"value": "30"
 		}
-	], 
-	"outputs": 0, 
+	],
 	"labels": {
-		"input": ["Value"], 
+		"input": [],
 		"output": []
-	}, 
+	},
 	"schematic_pins": {
 		"inputs": [
 			1
-		], 
-		"outputs": []
-	}, 
-	"repository": "https://github.com/nblocksStudioNodes/nblocks_pwm", 
+		],
+		"outputs": [
+			0
+		]
+	},
+	"repository": "https://github.com/nBlocksStudioNodes/nblocks_meter",
 	"revision": ""
 }

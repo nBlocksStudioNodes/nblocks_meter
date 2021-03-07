@@ -1,4 +1,4 @@
-# [METER](https://github.com/nBlocksStudioNodes/nblocks_meter)
+# [Meter](https://github.com/nBlocksStudioNodes/nblocks_meter)
 
 Drives a moving-coil meter with a PWM pin and optionally with a  transistor.
 
@@ -22,7 +22,7 @@ width = 300
 
 ----
 
-  *  Category: Function
+  *  Category: Output
   *  HAL: mbed
   *  Tested: LPC1768
   *  Author: N. Chalikias
@@ -33,15 +33,14 @@ width = 300
     *  float
 
 ## Parameters
- *  PinName: pinADC: ADC input pin
  *  PinName: pinPWM: PWM output pin
- *  float: VCC: Meter supply voltage
+ *  uint32_t: Frequency: PWM signal frequency
+ *  float: meterVcc: Meter supply voltage
  *  float: inputVMAX: maximum input at the ADC input
  *  float: meterVMAX: Max Voltage for the moving coil meter
- *  float: Thermistor beta value
- *  uint32_t: Frequency: PWM signal frequency
-
+ *  float: leftValue: Value indicated at the left side of the moving-coil-meter
+ *  float: rightValue: Value indicated at the right side of the moving-coil-meter
 
 ## Example:
 
-[Ticker]-->[Counter]-->[METER]
+[Ticker]-->[Thermistor]-->[METER]

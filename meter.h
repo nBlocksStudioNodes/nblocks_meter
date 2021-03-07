@@ -5,7 +5,7 @@
 
 class nBlock_Meter: public nBlockNode {
 public:
-    nBlock_Meter(PinName pinPWM, uint32_t Frequency, float meterVcc, float meterVmax, float leftV, float rightV);
+    nBlock_Meter(PinName pinPWM, uint32_t Frequency, float meterVcc, float meterVmax, float leftValue, float rightValue);
     void triggerInput(nBlocks_Message message);
     void step(void);
 private:
