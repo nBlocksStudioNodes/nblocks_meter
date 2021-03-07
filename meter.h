@@ -8,6 +8,11 @@ public:
     nBlock_Meter(PinName pinPWM, uint32_t Frequency, float meterVcc, float meterVmax, float leftValue, float rightValue);
     void triggerInput(nBlocks_Message message);
     void step(void);
+    float _meterVcc; 
+    float _meterVmax; 
+    float _leftValue; 
+    float _rightValue;
+    float tmp;
 private:
     PwmOut _pwm;
 	float duty_float;
